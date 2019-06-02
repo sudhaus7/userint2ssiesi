@@ -1,8 +1,8 @@
 # userint2ssiesi
 
-This is a typo3 extension which collects all uncached elements in a Page and replaces  them with either a Serverside Include Statement (SSI) (<!--#include virtual-->) for Nginx or Apache, or an Akamai/Cloudflare Style ESI Statement (<!--esi <esi:include src/>-->), which is understood by varnish as well.
+This is a typo3 extension which collects all uncached elements in a Page and replaces  them with either a Serverside Include Statement (SSI) ( &lt;!--#include virtual--&gt; ) for Nginx or Apache, or an Akamai/Cloudflare Style ESI Statement ( &lt;!--esi &lt;esi:include src/&gt;--&gt;), which is understood by varnish as well.
 
-The Configuration is pre-render stored in the cache, and then referenced by a separate pagetype that will be pulled by either the webserver or varnish ( or cloudflare ). The idea is to have a middleware cacheable page, with references to uncached elements inside the page, or elements with different caching lifecycles.
+The Configuration is pre-render stored in the cache, and then referenced by a separate pagetype that will be pulled by either the webserver or varnish ( or cloudflare ) to render the content. The idea is to have a middleware cacheable page, with references to uncached elements inside the page, or elements with different caching lifecycles.
 
 This plugin is heavily influenced by an extension Nicole Cordes ( https://github.com/IchHabRecht/ ) wrote in the scope of a customer project in context with varnish, where she gratiously gave some insights at the Typo3 Camp Stuttgart 2019 when we got to talk about similar strategies for speeding up delivery of highly dynamic content.
 

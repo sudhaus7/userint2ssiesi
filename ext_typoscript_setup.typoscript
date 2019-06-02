@@ -1,0 +1,13 @@
+s7ssiesi = PAGE
+s7ssiesi {
+    typeNum = 1559471597
+
+    config {
+        disableAllHeaderCode = 1
+    }
+
+    10 = USER
+    10.userFunc = SUDHAUS7\Sudhaus7Userint2ssiesi\Frontend\Renderer\UserintPageRenderer->render
+}
+
+plugin.tx_felogin_pi1.preserveGETvars >

@@ -1,3 +1,7 @@
+Please use the more tested and more featurecomplete https://github.com/IchHabRecht/intcache
+
+I leave this here as reference, but I wont put anymore work into it
+
 # userint2ssiesi
 
 This is a typo3 extension which collects all uncached elements in a Page and replaces  them with either a Serverside Include Statement (SSI) ( &lt;!--#include virtual--&gt; ) for Nginx or Apache, or an Akamai/Cloudflare Style ESI Statement ( &lt;!--esi &lt;esi:include src/&gt;--&gt;), which is understood by varnish as well.
